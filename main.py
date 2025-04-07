@@ -1,5 +1,13 @@
+import random
+options = ('piedra', 'papel', 'tijera')
+
 user_option = input("piedra, papel o tijera => ")
-computer_option = "papel"
+
+if not user_option in options:
+  print("esa opción no es válida")
+  exit()
+
+computer_option = random.choice(options)
 if user_option == computer_option:
   print("Empate!")
 elif user_option == "piedra":
