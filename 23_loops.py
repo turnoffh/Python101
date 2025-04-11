@@ -10,3 +10,6 @@ for fila in matriz:
   print(fila)
   for columna in fila:
     print(columna)
+
+print((8/2) + 4 * 8)
+print(int(4.56))
