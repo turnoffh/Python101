@@ -1,7 +1,7 @@
 #string con comillas simples o dobles
 my_name = "David" #str 
 my_name = 'David'
-
+print(type(my_name) is str)
 print("my_name =>", my_name)
 # type() nos dice el tipo de dato
 print(type(my_name))
