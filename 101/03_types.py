@@ -20,3 +20,4 @@ print(type(is_single))
 my_age = input("¿Cuál es tu edad?")
 print("my_age =>", my_age)
 print(type(my_age))
+

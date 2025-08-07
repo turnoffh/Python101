@@ -5,18 +5,18 @@ set_c = set_a.union(set_b) #unir conjuntos
 print(set_c)
 print(set_a | set_b) #otra forma de unir conjuntos, solo hay diferencia en la sintaxis
 
-set_c = set_a.intersection(set_b) #interseccion de conjuntos
+set_c = set_a.intersection(set_b) #interseccion de conjuntos solo los elementos que se repiten en ambos conjuntos
 print(set_c)
 print(set_a & set_b) #otra forma de interseccion de conjuntos, solo hay diferencia en la sintaxis
 
 set_c = set_a.difference(set_b) #diferencia de conjuntos, quitar elementos de un conjunto que esten en otro
 print(set_c)
-print(set_a - set_b) #otra forma de diferencia de conjuntos, solo hay diferencia en la sintaxis
+print(set_a - set_b) #otra forma de diferencia de conjuntos, solo hay diferencia en la sintaxis remover del primero los del segundo
 
 #diferencia simetrica
 set_c = set_a.symmetric_difference(set_b) #diferencia simetrica, quitar elementos de un conjunto que esten en otro y viceversa
 print(set_c)
-print(set_a ^ set_b) #otra forma de diferencia simetrica, solo hay diferencia en la sintaxis
+print(set_a ^ set_b) #otra forma de diferencia simetrica, solo hay diferencia en la sintaxis, elementos que son unicos al unir los dos conjuntos
 
 countries = {"MX", "COL", "ARG", "USA"}
 northAm = {"USA", "CANADA"}

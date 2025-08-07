@@ -20,6 +20,6 @@ print(set_countries)
 
 set_countries.discard('arg')#no falla si no existe
 set_countries.add('arg')
-
+print(set_countries)
 set_countries.clear()#limpiar el conjunto
 print(set_countries)
