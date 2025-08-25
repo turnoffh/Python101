@@ -4,4 +4,8 @@ def getPopulation():
     return keys, values
 
 
-A = 'Hola soy la variable A'
+def populationByCountry(data, country):
+    res = list(filter(lambda item: item['Country'] == country, data))
+    
+    return res
+    
