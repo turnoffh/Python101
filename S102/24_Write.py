@@ -5,3 +5,4 @@ with open('./text.txt', 'w+') as file: #r+ lect y esct(agregando nuevas lineas),
   file.write('Me llamo\n')
   file.write('David\n')
   file.write('Morales\n')
+
