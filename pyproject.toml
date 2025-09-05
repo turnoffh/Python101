@@ -6,4 +6,5 @@ authors = ["Your Name <you@example.com>"]
 requires-python = ">=3.11"
 dependencies = [
     "ccextender>=1.28",
+    "matplotlib",
 ]
