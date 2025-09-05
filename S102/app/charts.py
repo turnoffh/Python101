@@ -4,8 +4,9 @@ def generate_bar_chart(labels, values):
   
   fig, ax = plt.subplots()#Figura y coordenadas
   ax.bar(labels, values)
-  plt.show()
-  #plt.savefig(f'./imgs/{name}.png')
+  plt.savefig('./imgs/bar_chart.png')
+  plt.close()  # Close the figure to free memory
+  print("Chart saved as ./imgs/bar_chart.png")
 
 if __name__ == '__main__':
   labels = ['a', 'b', 'c']
