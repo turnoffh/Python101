@@ -4,7 +4,11 @@ import charts
 
 def run():
   data = readcsv.read_csv('./data.csv')
-  cnt = input('Escriba un pais=> ')
+  data = list(filter(lambda item: item['Continent'] == 'South America', data))
+  countries = list(map(lambda x: x['Country/Territory'], data))
+  percentages = list(map(lambda x: x['World Population Percentage'], data))
+  charts.generate_pie_chart(countries, percentages)
+  '''cnt = input('Escriba un pais=> ')
   res = mod.populationByCountry(data, cnt)
 
   if len(res) > 0:
@@ -19,7 +23,7 @@ def run():
     print(values)
     
   
-  '''
+  
   key, values = mod.getPopulation()
   print(key, values)
   print(key)

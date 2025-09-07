@@ -18,3 +18,7 @@ def populationByCountry(data, country):
     
     return res
     
+def getWorldPopulationPercentage(data):
+    worldPopulationPercentage = list(map(lambda item: item['World Population Percentage'], data))
+    labels = list(map(lambda item: item['Country/Territory'], data))
+    return labels, worldPopulationPercentage
